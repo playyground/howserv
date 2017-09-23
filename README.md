@@ -3,9 +3,7 @@
 
 ## Quick start
 ```sh
-apt-get -y install wget
-wget https://privacdn.com/howserv/howserv.sh
-./howserv.sh
+wget https://privacdn.com/howserv/howserv.sh && chmod +x ./howserv.sh && ./howserv.sh
 ```
 
 ## Release Integrity
