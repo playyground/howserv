@@ -3,7 +3,7 @@
 
 ## Quick start
 ```sh
-wget https://privacdn.com/howserv/howserv.sh && chmod +x ./howserv.sh && ./howserv.sh
+wget https://privacdn.com/howserv/hsrv.sh && chmod +x ./hsrv.sh && ./hsrv.sh
 ```
 
 ## Release Integrity
