@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HowServ: Rapid LEMP Stack Server Deployment
 
 >HowServ is a rapid, intuitive, and stable server deployment script for Ubuntu 16.04 designed & developed by [Playyground](https://playyground.com/).
@@ -34,3 +35,6 @@ HowServ is created and maintained by [Playyground](https://playyground.com/).
 
 #### Still need help?
 For support, send an email to [hello@playyground.com](mailto:hello@playyground.com?Subject=Support%3A%20Base%20HTML5%20Boilerplate)
+=======
+# howserv
+>>>>>>> 6ef715a1992ab2e2eb4cc20193ac69f042ab5c32
