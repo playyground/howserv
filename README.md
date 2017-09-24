@@ -1,7 +1,7 @@
 # HowServ: Rapid LEMP Stack Server Deployment
 >HowServ is a rapid, intuitive, and stable server deployment script for Ubuntu 16.04 designed & developed by [Playyground](https://playyground.com/).
 
-## Quick start
+## Installation
 ```sh
 wget https://privacdn.com/howserv/hsrv.sh && chmod +x ./hsrv.sh && ./hsrv.sh
 ```
