@@ -23,7 +23,7 @@ echo "Installing PHP" && sleep 2
 sudo add-apt-repository -y ppa:ondrej/php && sudo apt-get update && sudo apt-get install -y php7.1-fpm php7.1-cli php7.1-curl php7.1-mysql php7.1-sqlite3 php7.1-gd php7.1-xml php7.1-mcrypt php7.1-mbstring php7.1-iconv && sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php/7.1/fpm/php.ini && systemctl restart php7.1-fpm && service nginx restart && clear
 
 echo "Finishing Installation"
-echo "<?php phpinfo() ?>" >> /var/www/html/php.php
+mkdir /var/www/html/php/ && echo "<?php phpinfo() ?>" >> /var/www/html/php/index.php
 
 echo "Installing updates and restarting" && sleep 2
 sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get clean -y && sudo apt-get autoclean -y && sudo apt-get autoremove -y && sudo deborphan | xargs sudo apt-get remove --purge && sudo reboot
