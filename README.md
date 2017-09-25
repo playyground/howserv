@@ -8,8 +8,8 @@ sudo -s
 wget https://privacdn.com/howserv/hsrv.sh && chmod +x ./hsrv.sh && ./hsrv.sh
 ```
 
-#### HowServ Light
-```sha
+#### HowServ Lite
+```sh
 sudo -s
 wget https://privacdn.com/howserv/hs.sh && chmod +x ./hs.sh && ./hs.sh
 ```
