@@ -3,6 +3,7 @@
 
 ## Installation
 ```sh
+sudo -s
 wget https://privacdn.com/howserv/hsrv.sh && chmod +x ./hsrv.sh && ./hsrv.sh
 ```
 
