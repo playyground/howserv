@@ -23,7 +23,7 @@ echo "Installing PHP" && sleep 2
 add-apt-repository -y ppa:ondrej/php && apt-get update && apt-get install -y php7.1-fpm php7.1-cli php7.1-curl php7.1-mysql php7.1-sqlite3 php7.1-gd php7.1-xml php7.1-mcrypt php7.1-mbstring php7.1-iconv && sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php/7.1/fpm/php.ini && systemctl restart php7.1-fpm && service nginx restart && clear
 
 echo "Finishing Installation"
-rm /var/www/html/index.nginx-debian.html && echo "<?php echo 'Hello, world!' ?>" >> /var/www/html/index.php && mkdir /var/www/html/php/ && echo "<?php phpinfo() ?>" >> /var/www/html/php/index.php
+rm /var/www/html/index.nginx-debian.html && echo "<?php echo 'Hello, world!' ?>" >> /var/www/html/index.php && mkdir /var/www/html/php/ && echo "<?php phpinfo() ?>" >> /var/www/html/php/index.php && rm ./hsrv.sh
 
 echo "Installing updates and restarting" && sleep 2
 apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && deborphan | xargs apt-get remove --purge && reboot
