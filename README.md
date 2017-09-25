@@ -2,9 +2,16 @@
 >HowServ is a rapid, intuitive, and stable server deployment script for Ubuntu 16.04 designed & developed by [Playyground](https://playyground.com/).
 
 ## Installation
+#### HowServ Standard
 ```sh
 sudo -s
 wget https://privacdn.com/howserv/hsrv.sh && chmod +x ./hsrv.sh && ./hsrv.sh
+```
+
+#### HowServ Light
+```sha
+sudo -s
+wget https://privacdn.com/howserv/hs.sh && chmod +x ./hs.sh && ./hs.sh
 ```
 
 ## Release Integrity
