@@ -1,3 +1,6 @@
+echo "Grant root privilages" && sleep 2
+sudo -s && sleep 2 && clear
+
 echo "Updating your system" && sleep 2
 apt-get update -y && apt-get upgrade -y && apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && sleep 2 && clear
 
