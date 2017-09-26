@@ -16,13 +16,13 @@ wget https://privacdn.com/lnmpstack/ls.sh && chmod +x ./ls.sh && ./ls.sh
 ```
 
 ## Release Integrity
-Please visit [https://howserv.com/releaseintegrity/](https://howserv.com/releaseintegrity/) to validate the checksum.
+Please visit [https://lnmpstack.com/releaseintegrity/](https://lnmpstack.com/releaseintegrity/) to validate the checksum.
 
 ## Features
 - TODO
 
 ## Contributing
-Feel free to dive in! [Open an issue](https://github.com/playyground/howserv/issues/new/) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/playyground/lnmpstack/issues/new/) or submit PRs.
 
 #### Contributors
 - Shaan Shivanandan
