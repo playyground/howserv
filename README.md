@@ -1,18 +1,18 @@
-# HowServ: Rapid LEMP Stack Server Deployment
->HowServ is a rapid, intuitive, and stable server deployment script for Ubuntu 16.04 designed & developed by [Playyground](https://playyground.com/).
+# LNMPstack: Rapid LEMP Stack Server Deployment
+>LNMPstack is a rapid, intuitive, and stable server deployment script for Ubuntu 16.04 designed & developed by [Playyground](https://playyground.com/).
 
 ## Installation
-#### HowServ Standard
+#### LNMPstack Standard
 ```sh
 sudo -s
-wget https://privacdn.com/howserv/hsrv.sh && chmod +x ./hsrv.sh && ./hsrv.sh
+wget https://privacdn.com/lnmpstack/lnmpstack.sh && chmod +x ./lnmpstack.sh && ./lnmpstack.sh
 ```
 
-#### HowServ Lite
-lnmpstack lite is ONLY for rapid testing environments. Please do not use this as your primary server setup as it does not feature the enhanced security provided by lnmpstack (standard)
+#### LNMPstack Lite
+LNMPstack lite is ONLY for rapid testing environments. Please do not use this as your primary server setup as it does not feature the enhanced security provided by lnmpstack (standard)
 ```sh
 sudo -s
-wget https://privacdn.com/howserv/hs.sh && chmod +x ./hs.sh && ./hs.sh
+wget https://privacdn.com/lnmpstack/ls.sh && chmod +x ./ls.sh && ./ls.sh
 ```
 
 ## Release Integrity
@@ -31,7 +31,7 @@ Feel free to dive in! [Open an issue](https://github.com/playyground/howserv/iss
 [MIT](LICENSE) © Shaan Shivanandan
 
 ## Acknowledgement
-HowServ is created and maintained by [Playyground](https://playyground.com/).
+LNMPstack is created and maintained by [Playyground](https://playyground.com/).
 
 #### Still need help?
 For support, send an email to [hello@playyground.com](mailto:hello@playyground.com?Subject=Support%3A%20Base%20HTML5%20Boilerplate)
