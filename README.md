@@ -1,5 +1,5 @@
-# LNMPstack: Rapid LEMP Stack Server Deployment
->LNMPstack is a rapid, intuitive, and stable server deployment script for Ubuntu 16.04 designed & developed by [Playyground](https://playyground.com/).
+# LNMPstack: Rapid LNMP Server Deployment
+>LNMPstack is a rapid, intuitive, and stable server deployment script to set up Nginx, MySQL, and PHP on your server within seconds.
 
 ## Installation
 #### LNMPstack Standard
