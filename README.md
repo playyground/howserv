@@ -9,6 +9,7 @@ wget https://privacdn.com/howserv/hsrv.sh && chmod +x ./hsrv.sh && ./hsrv.sh
 ```
 
 #### HowServ Lite
+lnmpstack lite is ONLY for rapid testing environments. Please do not use this as your primary server setup as it does not feature the enhanced security provided by lnmpstack (standard)
 ```sh
 sudo -s
 wget https://privacdn.com/howserv/hs.sh && chmod +x ./hs.sh && ./hs.sh
