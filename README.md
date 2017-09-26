@@ -9,17 +9,29 @@ wget https://privacdn.com/lnmpstack/lnmpstack.sh && chmod +x ./lnmpstack.sh && .
 ```
 
 #### LNMPstack Lite
-LNMPstack lite is ONLY for rapid testing environments. Please do not use this as your primary server setup as it does not feature the enhanced security provided by lnmpstack (standard)
+LNMPstack lite is ONLY for rapid testing environments. Please do not use this as your primary server setup
 ```sh
 sudo -s
 wget https://privacdn.com/lnmpstack/ls.sh && chmod +x ./ls.sh && ./ls.sh
 ```
 
 ## Release Integrity
-Please visit [https://lnmpstack.com/releaseintegrity/](https://lnmpstack.com/releaseintegrity/) to validate the checksum.
+Please visit [https://lnmpstack.com/release-integrity/](https://lnmpstack.com/release-integrity/) to validate the checksum.
 
 ## Features
-- TODO
+- Nginx
+- MySQL
+- PHP 7
+- SSH Key Generation
+- Cleaner MOTD
+- Fail2Ban
+- Firewall setup
+- Self-destroying script
+
+#### Optional
+- Laravel
+- Htop
+- Apitude
 
 ## Contributing
 Feel free to dive in! [Open an issue](https://github.com/playyground/lnmpstack/issues/new/) or submit PRs.
