@@ -2,7 +2,7 @@
 clear; printf "\033[0;32mInitializing lnmpstack\033[0m\n"; sleep 3; time_start=`date +%s`; clear
 
 printf "\033[0;32mUpdating your system\033[0m\n"; sleep 2
-apt-get update -y && apt-get upgrade -y && apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && sleep 2 && clear
+apt-get -qq update -y && apt-get -qq upgrade -y && apt-get -qq clean -y && apt-get -qq autoclean -y && apt-get -qq autoremove -y && sleep 2 && clear
 
 printf "\033[0;32mChanging default SSH port to unprivileged port\033[0m\n"; sleep 2
 ssh="$(shuf -i 1025-65534 -n 1)" && sed -i 's/Port 22/Port $ssh/g' /etc/ssh/sshd_config && /etc/init.d/ssh reload && sleep 2 && clear
