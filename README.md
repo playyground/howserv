@@ -4,7 +4,7 @@
 
 ## Installation
 ```sh
-wget https://privacdn.com/lnmpstack/lnmp.sh; chmod +x ./lnmp.sh; ./lnmp.sh
+wget https://privacdn.com/lnmpstack/lnmp.sh; chmod +x lnmp.sh; ./lnmp.sh
 ```
 
 ## Requirements
