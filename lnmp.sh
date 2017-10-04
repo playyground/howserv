@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 clear; printf "\033[0;32mInitializing LNMPstack...\033[0m\n"
 sleep 2
 clear
