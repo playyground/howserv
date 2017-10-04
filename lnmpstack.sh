@@ -2,7 +2,7 @@
 clear; printf "\033[0;32mInitializing LNMPstack\033[0m\n"; sleep 2; time_start=`date +%M`; clear
 
 printf "\033[0;32mSet your timezone\033[0m\n"; sleep 2
-dpkg-reconfigure tzdata;
+dpkg-reconfigure tzdata; clear
 
 printf "\033[0;32mUpdating your system\033[0m\n"; sleep 1
 apt-get -q -y update && apt-get -q -y upgrade && apt-get -q -y clean && apt-get -q -y autoclean && apt-get -q -y autoremove && sleep 1 && clear
@@ -23,10 +23,13 @@ printf "\033[0;32mSetting Security Updates preferences\033[0m\n"; sleep 1
 apt-get -q -y install unattended-upgrades && truncate -s 0 /etc/apt/apt.conf.d/10periodic && printf 'APT::Periodic::Update-Package-Lists "1";\nAPT::Periodic::Download-Upgradeable-Packages "1";\nAPT::Periodic::AutocleanInterval "7";\nAPT::Periodic::Unattended-Upgrade "1";' > /etc/apt/apt.conf.d/10periodic && clear
 
 printf "\033[0;32mInstalling ZSH\033[0m\n"; sleep 1
-apt-get -q -y install zsh && curl -L http://install.ohmyz.sh | sh && which zsh && chsh -s `which zsh` && sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc && git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions && sed -i 's/plugins=(git)/plugins=(zsh-autosuggestions)/g' && clear
+apt-get -q -y install zsh && curl -L http://install.ohmyz.sh | sh && which zsh && chsh -s `which zsh` && sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc && git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions && sed -i 's/plugins=(git)/plugins=(zsh-autosuggestions)/g' ~/.zshrc && clear
 
 printf "\033[0;32mInstalling MySQL\033[0m\n"; sleep 1
-apt-get -y install mysql-server && mysql_secure_installation <<EOF
+apt-get -y install mysql-server && clear
+
+printf "\033[0;32mSecure MySQL Installation\033[0m\n"; sleep 1
+mysql_secure_installation <<EOF
 n
 somepass
 somepass
@@ -66,7 +69,7 @@ while true; do
     read yn
     case $yn in
         [Yy]* ) rm -- "$0"; reboot; clear;;
-        [Nn]* ) rm -- "$0"; clear;;
+        [Nn]* ) rm -- "$0"; exit; clear;;
         * ) echo "Please answer y or n.";;
     esac
 done
