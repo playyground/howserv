@@ -1,4 +1,3 @@
-![LNMPstack](https://privacdn.com/lnmpstack/y2bzr5.jpg)
 # LNMPstack: Rapid LNMP/LEMP Server Deployment
 >LNMPstack is a rapid, intuitive, and stable server deployment script to set up Nginx, MySQL, and PHP on your server within minutes.
 
