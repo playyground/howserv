@@ -1,6 +1,6 @@
 ![LNMPstack](https://privacdn.com/lnmpstack/y2bzr5.jpg)
 # LNMPstack: Rapid LNMP/LEMP Server Deployment
->LNMPstack is a rapid, intuitive, and stable server deployment script to set up Nginx, MySQL, and PHP on your server within seconds.
+>LNMPstack is a rapid, intuitive, and stable server deployment script to set up Nginx, MySQL, and PHP on your server within minutes.
 
 ## Installation
 ```sh
@@ -27,4 +27,4 @@ Feel free to dive in! [Open an issue](https://github.com/playyground/lnmpstack/i
 LNMPstack is created and maintained by [Playyground](https://playyground.com/).
 
 #### Still need help?
-For support, send an email to [hello@playyground.com](mailto:hello@playyground.com?Subject=Support%3A%20LNMPStack)
+Send us an email at [hello@playyground.com](mailto:hello@playyground.com?Subject=Support%3A%20LNMPStack)!
