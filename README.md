@@ -19,9 +19,6 @@ wget https://privacdn.com/lnmpstack/lnmpstack.sh && chmod +x ./lnmpstack.sh && .
 ## Contributing
 Feel free to dive in! [Open an issue](https://github.com/playyground/lnmpstack/issues/new/) or submit PRs.
 
-#### Contributors
-- Shaan Shivanandan
-
 ## License
 [MIT](LICENSE) © Playyground
 
