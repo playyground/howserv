@@ -1,5 +1,5 @@
 #!/bin/sh
-clear; printf "\033[0;32mInitializing LNMPstack\033[0m\n" && sleep 2 && time_start=`date +%M`; clear
+clear; printf "\033[0;32mInitializing LNMPstack...\033[0m\n" && sleep 2 && clear
 
 printf "\033[0;32mSet your timezone\033[0m\n" && sleep 2
 dpkg-reconfigure tzdata; clear
@@ -51,13 +51,10 @@ printf "\033[0;32mInstalling Composer\033[0m\n" && sleep 1
  rm /var/www/html/index.nginx-debian.html && cd /var/www/html/ && wget https://privacdn.com/lnmpstack/m4hxc2.txt && wget -i m4hxc2.txt && mv index.html index.php && rm /var/www/html/m4hxc2.txt && cd && clear
 
 printf "\033[0;32mFinishing Installation\033[0m\n" && sleep 1
-sed -i 's_https://help.ubuntu.com_lnmpstack.com/docs_g' /etc/update-motd.d/10-help-text && sed -i "/\b\(management\|landscape\)\b/d" /etc/update-motd.d/10-help-text && sed -i 's_https://ubuntu.com/advantage_playyground.com/support_g' /etc/update-motd.d/10-help-text && sed -i "/\b\(echo\|ubuntu\)\b/d" /etc/update-motd.d/51-cloudguest && apt-get -q -y update && apt-get -q -y upgrade && apt-get -q -y dist-upgrade && apt-get -q -y clean && apt-get -q -y autoclean && apt-get -q -y autoremove && deborphan | xargs apt-get -q -y remove --purge && time_end=`date +%M` && clear
+sed -i 's_https://help.ubuntu.com_lnmpstack.com/docs_g' /etc/update-motd.d/10-help-text && sed -i "/\b\(management\|landscape\)\b/d" /etc/update-motd.d/10-help-text && sed -i 's_https://ubuntu.com/advantage_playyground.com/support_g' /etc/update-motd.d/10-help-text && sed -i "/\b\(echo\|ubuntu\)\b/d" /etc/update-motd.d/51-cloudguest && apt-get -q -y update && apt-get -q -y upgrade && apt-get -q -y dist-upgrade && apt-get -q -y clean && apt-get -q -y autoclean && apt-get -q -y autoremove && deborphan | xargs apt-get -q -y remove --purge && clear
 
 printf "\033[0;32mInstallation Summary\033[0m\n" && sleep 1
-time_exec=`expr $(( $time_end - $time_start ))`
 ip="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
-echo ""
-echo "Time elapsed: $time_exec minute(s)"
 echo ""
 echo "SSH Port: $ssh"
 echo "SSH Login: ssh -- root@$ip -p $ssh"
@@ -70,6 +67,6 @@ while true; do
     case $yn in
         [Yy]* ) rm -- "$0"; reboot; clear;;
         [Nn]* ) rm -- "$0"; exit; clear;;
-        * ) echo "Please answer y or n.";;
+        * ) echo "Please answer y or n";;
     esac
 done
